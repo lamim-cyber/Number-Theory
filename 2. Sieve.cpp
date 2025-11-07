@@ -7,10 +7,17 @@ using namespace std;
 const int N = 1e6 + 9;
 bool flag[N];
 
-vector<int> sieve(int n){
+//if array size beshi boro hoye jay 
+
+bitset<N> flag;
+//evabe nileo hobe .. eki kaj kore 
+
+vector<int> primes;
+
+void sieve(int n){
 
         flag[1] = 1;
-        vector<int> primes;
+        
         for(int i = 2 ; i * i <= n; i++){
             if(flag[i]) continue;
 
